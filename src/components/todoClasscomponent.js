@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import shortid from 'shortid';
+import '../App.css';
 
 class TodoComponentClass extends Component{
 
@@ -11,6 +12,7 @@ class TodoComponentClass extends Component{
         this.keyPress=this.keyPress.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this)
     }
+
 
     keyPress=(event)=>{
         this.setState({message:event.target.value})
@@ -30,9 +32,9 @@ class TodoComponentClass extends Component{
 
     render(){
         return(
-                <div>
+                <div className={'form'}>
 
-                        Enter Name<input type={'text'} onChange={this.keyPress}/>
+                        <input placeholder={'...Activity'} type={'text'} onChange={this.keyPress}/>
                         <button onClick={this.handleSubmit}>Add Todo</button>
 
                 </div>

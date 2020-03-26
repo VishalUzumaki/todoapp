@@ -25,7 +25,7 @@ class App extends Component {
                 <TodocomponentClass onSubmit={this.handleClick}/>
                 {this.state.todos.map(todo=> (
                     <div key={todo.id}>
-                    <Todotemplate  text={todo.activity}/>
+                    <Todotemplate  text={todo.activity}/> 
                     </div>
                 ))
                 }
