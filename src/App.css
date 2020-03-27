@@ -1,10 +1,10 @@
 body{
   background-color: black;
-
 }
 
 .App {
   text-align: center;
+  color: white;
 }
 
 
@@ -47,4 +47,16 @@ body{
 
 .form button:focus{
   outline: none;
+}
+
+#cancel{
+  float: top;
+  float: right;
+}
+
+.counter{
+  padding:10px;
+  text-align: center;
+  background: #1abc9c;
+  font-size: 20px;
 }

@@ -35,7 +35,8 @@ class TodoComponentClass extends Component{
                 <div className={'form'}>
 
                         <input placeholder={'...Activity'} type={'text'} onChange={this.keyPress}/>
-                        <button onClick={this.handleSubmit}>Add Todo</button>
+
+                    <button onClick={this.handleSubmit}>Add Todo</button>
 
                 </div>
         );
